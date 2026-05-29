@@ -13,8 +13,8 @@ mkdir collect/dev
 
 cp ./**/build/libs/*.jar collect
 
-mv ./collect/*sources*.jar collect/sources
-mv ./collect/*core*.jar collect/common
-mv ./collect/*xplat*.jar collect/common
-mv ./collect/*crummyconfig*.jar collect/common
-mv ./collect/*-dev.jar collect/dev
+mv ./collect/*sources*.jar collect/sources || true
+mv ./collect/*core*.jar collect/common || true
+mv ./collect/*xplat*.jar collect/common || true
+mv ./collect/*crummyconfig*.jar collect/common || true
+mv ./collect/*-dev.jar collect/dev || true
